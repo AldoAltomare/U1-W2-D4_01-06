@@ -68,7 +68,7 @@ function somma(n1,n2){
 return n1+n2; // return restituisce il valore relativo all'esecizione della funzione e la interrompe
 }
 
-console.log(somma(23,-47))
+console.log(somma(23,-47)) // 23 e 47 sono gli ARGOMENTI assefgnati ai parametri
 
 
 // const i = 3
