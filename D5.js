@@ -148,6 +148,21 @@ const newStr3 = saluto.toLowerCase()
 console.log(newStr2)
 console.log(newStr3)
 
+
+/* METODI PER UNIRE I CARATTERI
+
+string.concat("stringToAdd") unisce alla stringa iniziale la stringa tra parentesi
+
+*/
+
+const newStr4 = saluto.concat(" che si chiamano Aldo")
+console.log(newStr4)
+
+
+
+
+
+
 // const i = 3
 
 // switch(i){
