@@ -63,6 +63,7 @@ console.log("è un pappagallo")
 //  definire una funzione significa assegnarle un nome e indicare le istruzioni da eseguire
 //  invocare una funzione significa richiamarla tramite il nome, se non invocata non ha effetto
 
+console.log(somma(23,-47)) // 23 e 47 sono gli ARGOMENTI assefgnati ai parametri
 
 function somma(n1,n2){
 return n1+n2; // return restituisce il valore relativo all'esecizione della funzione e la interrompe
@@ -70,6 +71,82 @@ return n1+n2; // return restituisce il valore relativo all'esecizione della funz
 
 console.log(somma(23,-47)) // 23 e 47 sono gli ARGOMENTI assefgnati ai parametri
 
+
+// METODI DI MANIPOLAZIONE DELLE STRINGHE
+const saluto = "Ciao studenti. Salutiamo tutti gli studenti"
+const pos = saluto.indexOf("studenti",10) // indexOf ci permette di trovare la prima posizione di quel pezzo di stringa (se inseriamo il secondo argomento indichiamo la posizione da cui partire per la ricerca )
+const pos1 = saluto.lastIndexOf("studenti",0) // lastIndexOf ci permette di trovare l'ultima posizione di quel pezzo di stringa
+const pos2 = saluto.search("Ciao") //search() non accetta secondo parametro di posizione
+const lunghezzaStringa = saluto.length
+
+
+console.log(pos)
+console.log(pos1)
+console.log(pos2)
+console.log(lunghezzaStringa) // inclusi gli spazi
+
+
+/* METODI PER ESTRARRE PARTE DI STRINGHE
+
+slice() accetta due parametri: posizione di inizio e posizione di fine estrazione
+                    slice(10,15) / slice(-10,-15) / slice(8)
+
+substring() analogo a slice() ma non accetta parametri negativi
+                    substring(10,15) / substring(8)
+
+substr() analogo a slice() ma il secondo parametro indica la lunghezza esatta della stringa da estrarre
+                    substr(10,15) / substr(-10) / substr(8)
+
+*/
+
+const slice1 = saluto.slice(7,12)
+const slice2 = saluto.slice(-12, -9)
+const slice3 = saluto.slice(7)
+const substring1 = saluto.substring(7,12)
+// const substring2 = saluto.substring(-12, -9) // non funziona
+const substring3 = saluto.substring(7)
+const substr1 = saluto.substr(7,12)
+const substr2 = saluto.substr(-12)
+const substr3 = saluto.substr(7)
+
+console.log(slice1)
+console.log(slice2)
+console.log(slice3)
+console.log(substring1)
+// console.log(substring2) // non funziona
+console.log(substring3)
+console.log(substr1)
+console.log(substr2)
+console.log(substr3)
+
+
+/* METODI PER SOSTITUIRE PARTE DI STRINGHE
+
+replace("string0","string1") accetta due parametri: parola da sostituire e parola 
+                    sostituisce solo la prima occorrenza
+                    case sensitive
+
+replaceAll("string0","string1")
+                    sostituisce tutte le occorrenze
+*/
+
+const newStr = saluto.replaceAll("studenti","discenti")
+const newStr1 = saluto.replace("Studenti//","discenti")
+console.log(newStr)
+console.log(newStr1)
+
+/* METODI PER MODIFICARE I CARATTERI
+
+toUpperCase() trasforma riga in maiuscolo
+
+toLowerCase() trasforma riga in minuscolo
+
+*/
+
+const newStr2 = saluto.toUpperCase()
+const newStr3 = saluto.toLowerCase()
+console.log(newStr2)
+console.log(newStr3)
 
 // const i = 3
 
