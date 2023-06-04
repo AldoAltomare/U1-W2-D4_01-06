@@ -159,6 +159,57 @@ const newStr4 = saluto.concat(" che si chiamano Aldo")
 console.log(newStr4)
 
 
+/* METODI PER ELIMINARE SPAZI VUOTI INIZIALI
+
+string.trim() elimina gli spazi vuoti da una stringa
+
+*/
+
+const newStr5 = saluto.trim()
+console.log(newStr5)
+
+/* METODI PER INDIVIDUARE CARATTERI SPECIFICI IN UNA STRINGA
+
+string.charAt(x) indica il carattere in posizione x della stringa
+
+*/
+
+const newStr6 = saluto.charAt(15)
+console.log(newStr6)
+
+
+/* METODI PER DIVIDERE ELEMENTI DI UNA STRINGA
+
+string.split(x) indica il carattere in posizione x della stringa
+
+*/
+
+const newStr7 = saluto.split(" ")
+console.log(newStr7)
+
+
+/* METODI DELLA LIBRERIA MATH
+
+random() --> ritorna un numero casuale da 0 ad 1 escluso
+floor() --> arrotonda per difetto il numero
+ceil() --> arrotonda per eccesso il numero
+max() --> restituisce il maggiore tra un set di parametri
+min() --> restituisce il minore tra un set di parametri
+
+
+*/
+
+console.log(Math.random()) // --> cambia ogni volta che si refresha
+console.log(Math.floor(Math.random())) // --> se passiamo al floor un numero random() uscirà sempre 0
+console.log(Math.floor(Math.random()*10)) // --> *10 risolve il problema. ritorna un numero tra 0 e 9
+console.log(Math.floor(Math.random()*11)) // --> ritorna un numero tra 0 e 10
+console.log(Math.floor(Math.random()*10)+1) // --> ritorna un numero tra 1 e 10
+console.log(Math.floor(Math.random()*100)) // --> ritorna un numero tra 0 e 99
+
+console.log(Math.ceil(Math.random()*100))
+
+console.log(Math.max(1,2,3,4,5,6,7,8,9))
+console.log(Math.min(1,2,3,4,5,6,7,8,9))
 
 
 
